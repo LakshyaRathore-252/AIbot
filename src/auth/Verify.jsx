@@ -39,7 +39,7 @@ const Verify = () => {
                 />
 
             </form>
-            <button type='submit' className='mt-5 bg-[#FF4820] p-2  '>
+            <button type='submit' onClick={handleSubmit} className='mt-5 bg-[#FF4820] p-2  '>
                 Submit
             </button>
         </div>
