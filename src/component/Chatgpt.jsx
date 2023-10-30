@@ -16,7 +16,7 @@ const Chatgpt = () => {
     const toastId = toast.loading('Loading...');
 
     axios
-      .post("http://localhost:5000/user/chat", { prompt, email })
+      .post("https://aichatbot-iecb.onrender.com/user/chat", { prompt, email })
       .then((res) => {
         console.log(res.data.data.text);
         setResponse(res.data.data.text);

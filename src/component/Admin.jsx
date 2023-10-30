@@ -11,7 +11,7 @@ const Admin = () => {
   const fetchData = async () => {
     const toastId = toast.loading('Loading...');
     try {
-      const res = await axios.get("http://localhost:5000/user/getChatData");
+      const res = await axios.get("https://aichatbot-iecb.onrender.com/user/getChatData");
       console.log(res.data.chatusers);
       setResponse(res.data.chatusers); // Store the users data into response
       toast.dismiss(toastId);

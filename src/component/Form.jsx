@@ -15,7 +15,7 @@ const Form = () => {
         const toastId = toast.loading('Loading...');
 
         axios
-            .post("http://localhost:5000/user/userData", { name, email, mobile })
+            .post("https://aichatbot-iecb.onrender.com/user/userData", { name, email, mobile })
             .then((res) => {
                 console.log(res.data);
                 toast.dismiss(toastId);
@@ -25,7 +25,7 @@ const Form = () => {
             .catch((err) => {
                 console.log(err.response.data); // Log the server error message
                 toast.dismiss(toastId);
-                toast.error("Error while storing data");
+                toast.error("Error while stroing data");
             });
     }
 
